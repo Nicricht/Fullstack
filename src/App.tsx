@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './componentes/organismos/Navbar'
 import Inicio from './paginas/Inicio'
-import Productos from './paginas/Productos'
-import DetalleProducto from './paginas/DetalleProducto'
+import Peliculas from './paginas/Peliculas'
+import DetallePelicula from './paginas/DetallePelicula'
 import './App.css'
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/productos" element={<Productos />} />
-        <Route path="/producto/:id" element={<DetalleProducto />} />
+        <Route path="/peliculas" element={<Peliculas />} />
+        <Route path="/peliculas/:id" element={<DetallePelicula />} />
       </Routes>
     </>
   )

@@ -1,33 +1,34 @@
-# Tienda React
+# Catálogo de Películas
 
-Proyecto simple realizado para practicar los contenidos vistos en clases de Full Stack.
+Actividad práctica desarrollada con React, Vite y TypeScript.
 
-## Contenidos usados
+## Contenidos utilizados
 
-- React con TypeScript
+- React
 - Vite
+- TypeScript
 - Bootstrap
+- React Router
 - Atomic Design
 - Props
-- React Router
-- Rutas con parametros
+- Interfaces
+- Rutas dinámicas
+- useParams
 
-## Estructura
+## Organización
 
-- atomos: botones
-- moleculas: CardProducto
-- organismos: Navbar
-- paginas: Inicio, Productos y DetalleProducto
+- `atomos`: NavItem, BotonDetalle y BotonVolver
+- `moleculas`: CardPelicula
+- `organismos`: Navbar
+- `paginas`: Inicio, Peliculas y DetallePelicula
 
-## Ejecutar el proyecto
+## Ejecutar
 
 ```bash
 npm install
 npm run dev
 ```
 
-Luego abrir la direccion que muestra Vite en la terminal.
+## Recorrido
 
-## Verificacion
-
-El proyecto incluye una verificacion automatica que instala dependencias y ejecuta `npm run build` en cada cambio a `main`.
+Inicio → Películas → Ver detalle → Volver a Películas

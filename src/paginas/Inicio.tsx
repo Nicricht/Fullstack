@@ -1,12 +1,19 @@
+import { Link } from 'react-router-dom'
+
 function Inicio() {
   return (
-    <div className="container mt-4 text-center">
-      <h1>Inicio</h1>
+    <main className="container mt-5 text-center">
+      <h1>Catálogo de Películas</h1>
 
-      <p>
-        Bienvenido a nuestra tienda.
+      <p className="lead">
+        Esta aplicación permite revisar diferentes películas
+        y consultar la información de cada una.
       </p>
-    </div>
+
+      <Link to="/peliculas" className="btn btn-primary">
+        Ver películas
+      </Link>
+    </main>
   )
 }
 

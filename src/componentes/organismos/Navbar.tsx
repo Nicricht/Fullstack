@@ -1,21 +1,16 @@
-import { Link } from 'react-router-dom'
+import NavItem from '../atomos/NavItem'
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          Mi Tienda
-        </Link>
+        <span className="navbar-brand">
+          Catálogo de Películas
+        </span>
 
         <div className="navbar-nav ms-auto">
-          <Link className="nav-link" to="/">
-            Inicio
-          </Link>
-
-          <Link className="nav-link" to="/productos">
-            Productos
-          </Link>
+          <NavItem texto="Inicio" ruta="/" />
+          <NavItem texto="Películas" ruta="/peliculas" />
         </div>
       </div>
     </nav>
