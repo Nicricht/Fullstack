@@ -1,15 +1,20 @@
-import { Link } from 'react-router-dom'
-
-interface BotonDetalleProps {
-  id: number;
+import {Link} from "react-router-dom"
+interface BotonDetalleProps{
+    id:number;
 }
 
-function BotonDetalle({ id }: BotonDetalleProps) {
-  return (
-    <Link className="btn btn-primary" to={`/peliculas/${id}`}>
-      Ver detalle
-    </Link>
-  )
-}
 
+function BotonDetalle({id}:BotonDetalleProps){
+
+return(<Link to={`/peliculas/${id}`}
+        className="btn btn-primary"
+        >
+            Ver detalle
+        </Link>
+)
+}
 export default BotonDetalle
+
+
+
+

@@ -1,14 +1,23 @@
-import CardPelicula from '../componentes/moleculas/CardPelicula'
-import { peliculas } from '../datos/peliculas'
+import CardPelicula from "../componentes/moleculas/CardPelicula"
+import { peliculas } from "../datos/Peliculas"
 
 function Peliculas() {
   return (
-    <main className="container mt-4 mb-5">
-      <h1 className="text-center">Películas</h1>
+    <div className="container mt-4">
 
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <h1 className="text-center">
+        Películas
+      </h1>
+
+      <div className="row g-4">
+
         {peliculas.map((pelicula) => (
-          <div className="col" key={pelicula.id}>
+
+          <div
+            className="col-md-6 col-lg-3"
+            key={pelicula.id}
+          >
+
             <CardPelicula
               id={pelicula.id}
               titulo={pelicula.titulo}
@@ -17,10 +26,13 @@ function Peliculas() {
               anio={pelicula.anio}
               imagen={pelicula.imagen}
             />
+
           </div>
+
         ))}
+
       </div>
-    </main>
+    </div>
   )
 }
 
