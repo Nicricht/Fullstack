@@ -27,3 +27,7 @@ npm run dev
 ```
 
 Luego abrir la direccion que muestra Vite en la terminal.
+
+## Verificacion
+
+El proyecto incluye una verificacion automatica que instala dependencias y ejecuta `npm run build` en cada cambio a `main`.
